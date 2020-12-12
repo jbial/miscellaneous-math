@@ -1,7 +1,7 @@
 ## Motivation
 This repository contains an on-going collection of notebooks containing bite-sized chunks of math.
 
-I'll restrict myself to general topics that have wide-ranging applications rather than domain-specific algorithms.
+I'll restrict the content to general topics that have wide-ranging applications rather than domain-specific algorithms.
 
 ## To-do
 As a note to myself, some random topics I want to add to this repo in the future include:
