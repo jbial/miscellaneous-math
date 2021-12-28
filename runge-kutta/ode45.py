@@ -86,8 +86,8 @@ def main():
     args = parser.parse_args()
 
     # ode init stuff
-    init_cond = np.array([100, -1., 9.])
-    coeffs = [10., 100., 8/3]
+    init_cond = np.array([1.5, 1., 2.5])
+    coeffs = [10., 28., 8/3]
     ode = LorenzAttractor(coeffs)
 
     start_time = time.time()
@@ -107,7 +107,16 @@ def main():
     ax.plot(*values.T, color='b', linewidth=0.5)
     ax.scatter(*init_cond, marker='*', color='r', label=ivp_labels)
     plt.legend()
+    plt.savefig(
+        f"figures/attractor_"
+        f"IC-{'-'.join(str(i) for i in init_cond)}_"
+        f"coeffs-{'-'.join(str(c) for c in coeffs)}.png"
+    )
     plt.show()
+
+    # save data to file
+    data = np.vstack([[args.start, args.stop, args.step], init_cond, coeffs, values])
+    np.savetxt("data/attractor_data.csv", data, delimiter=',')
 
 
 if __name__ == '__main__':
