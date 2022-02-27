@@ -10,5 +10,5 @@ As a note to myself, some random topics I want to add to this repo in the future
 * Compressed sensing
 * SVD & power iteration
 * Sampling methods
-* Convex hull
+* Optimization via simulated annealing
 * Random walks
