@@ -3,7 +3,10 @@ This repository contains an on-going collection of notebooks containing bite-siz
 
 I'll restrict the content to general topics that have wide-ranging applications rather than domain-specific algorithms.
 
-## To-do
+## TODO
+
+* ADD DOCUMENTATION
+
 As a note to myself, some random topics I want to add to this repo in the future include:
 * DFT, FFT
 * Dual numbers
